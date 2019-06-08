@@ -37,9 +37,11 @@ class GetBookInfo extends Component {
     const { isBookLoaded, book } = this.state;
     if (isBookLoaded) {
       return (
-        <Media>
+        <Media as="li">
           {this.getImage()}
-          {book.title} by {book.authors.author.name}
+          <Media.Body>
+            {book.title} by {book.authors.author.name}
+          </Media.Body>
         </Media>
       );
     }
@@ -51,9 +53,7 @@ class GetBookInfo extends Component {
     if (isBookLoaded) {
       return (
         <img
-          width={64}
-          height={64}
-          className="mr-3"
+          className="align-self-center mr-3"
           src={book.image_url}
           alt={book.title}
         />
