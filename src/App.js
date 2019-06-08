@@ -36,11 +36,18 @@ class GetBookInfo extends Component {
   render() {
     const { isBookLoaded, book } = this.state;
     if (isBookLoaded) {
+      const regex = /<br\s*[\/]?>/gi;
+      const bookDescription = book.description.split(regex).join("\n");
       return (
         <Media as="li">
           {this.getImage()}
           <Media.Body>
-            {book.title} by {book.authors.author.name}
+            <a href={book.link} target="_blank">
+              <h5>
+                {book.title} by {book.authors.author.name}
+              </h5>
+            </a>
+            <p>{bookDescription}</p>
           </Media.Body>
         </Media>
       );
