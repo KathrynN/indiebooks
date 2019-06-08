@@ -13,6 +13,7 @@ deploy:
   secret_access_key:
     secure: p4TVvkeWbeQwVwJOCPuuACVojCXeZejkvDE/aU/hEmCw6Lf/doOaZOwq/OPZWzZmTO4upPaRkDSvm/b+21+58MyTzM7cbzXG/j66+pneQtgyeVCDNN1mnAvvDuqmRBLIfVXAM+rwyc1uihvrq0oX3B3aO3y40DSEuL6LcINBjI1z3raxOTWW3sTtt9p3Vma0WiHece+69ziUA0QejJdGNXvHyR/6u0vW288rMEEl3Qirap/bko6qas/A8nBpEGGCoWhWVzBuD0pVGtt0B7MEzLQtuBaRkf13gg1Xw2qtBJs6hD/eHR0lm+lEtEH2cjv5rJZKYIsdKQNEBOoAax3y/Aix8utpSqN56L9NsXe3a4kxJMDq5zr1L6Gc7RSpdeYfz7HUqEOOFBRGQsASwoi8FC4Y9qffWkqEhKH3KIkIGlN+qDvUfnicgZH+2uuWVdGkVKHns30td6oG6BAQ7HZO/k2N9O1fFZpe28hTAloWW1BWXq9GxgdKRzn5xKLKQNpGNiDnv/r9PAOa25uvbJoEfcxD66JbofXWQoGBGcHLRpJU9NyLnF5CKfsrLZLPu2EU62RVzzonxWGhHsDE1lBkCJXT6J0l3BQYSsSRurUpWBYHYFqUpCI6YquHcsHW68utU/514F0K/7oUVKMM0eEvSBPCyhxdkrcNwSEjT3OhjzY=
   bucket: books.kathrynnewbould.com
+  local-dir: ./build/
   skip_cleanup: true
   acl: public_read
   on:
