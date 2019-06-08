@@ -12,12 +12,12 @@ function App() {
 }
 
 function generateBookList(booksList) {
+  console.log(process.env);
   return (
     <ul>
-      {" "}
       {booksList.map(item => (
-        <GetBookInfo book={item} />
-      ))}{" "}
+        <GetBookInfo book={item} key={item.title} />
+      ))}
     </ul>
   );
 }
@@ -27,7 +27,7 @@ class GetBookInfo extends Component {
     const book = this.props.book;
     return (
       <li>
-        {book.title}" by "{book.author}
+        {book.title} by {book.author}
       </li>
     );
   }
