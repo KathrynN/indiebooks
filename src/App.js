@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import './App.css';
-import bookdata from './data/books.json';
+import React, { Component } from "react";
+import "./App.css";
+import bookdata from "./data/books.json";
 
 function App() {
   return (
@@ -12,26 +12,25 @@ function App() {
 }
 
 function generateBookList(booksList) {
-	let list;
-	for (var index in booksList) {
-    console.log(<GetBookInfo book={booksList[index]}/>)  // (index, booksList)
-	}
-	return  <ul> {
-    booksList.map(item => (
-    <GetBookInfo book={item}/>
-  ))
-} </ul>;
+  return (
+    <ul>
+      {" "}
+      {booksList.map(item => (
+        <GetBookInfo book={item} />
+      ))}{" "}
+    </ul>
+  );
 }
 
 class GetBookInfo extends Component {
-	render() {
+  render() {
     const book = this.props.book;
-  	return (<li>
-  		+ {book.title}
-  		+ " by "
-  		+ {book.author}
-  		+ </li>)
-    }
+    return (
+      <li>
+        {book.title}" by "{book.author}
+      </li>
+    );
+  }
 }
 
 export default App;
