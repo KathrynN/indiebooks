@@ -1,9 +1,11 @@
-{ "books": [
-{ "title":"The Fighter of Aldea", "author":"Kira Weston", "goodreads_id":null },
-{ "title":"Two Thousand Years", "author":"M. Dalto", "goodreads_id":null },
-{ "title":"Adrift", "author":"Isabelle Adler", "goodreads_id":null },
-{ "title":"Life Instructions", "author":"Tanya Sangpun Thamkruphat", "goodreads_id":null },
-{ "title":"Chasing Eveline", "author":"Leslie Hauser", "goodreads_id":null },
-{ "title":"Black Tears", "author":"Nicol Nightingale", "goodreads_id":null }
-]
+{
+  "books": [
+    { "goodreads_id": 39858439 },
+    { "goodreads_id": 37534507 },
+    { "goodreads_id": 33759717 },
+    { "goodreads_id": 43426605 },
+    { "goodreads_id": 26631470 },
+    { "goodreads_id": 45471470 },
+    { "goodreads_id": 44420645 }
+  ]
 }
