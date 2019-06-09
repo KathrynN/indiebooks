@@ -3,11 +3,12 @@ import Media from "react-bootstrap/Media";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import underscore from "underscore";
 import axios from "axios";
 import "./App.css";
 
 const prodUrl = "http://ec2-52-70-122-182.compute-1.amazonaws.com:3001";
-// const devUrl = "http://localhost:3001";
+//const devUrl = "http://localhost:3001";
 
 function App() {
   return (
@@ -142,7 +143,10 @@ class GetBookInfo extends Component {
   render() {
     const book = this.props.book;
     const regex = /<br\s*[/]?>/gi;
-    const bookDescription = book.description.split(regex).join("\n");
+    const bookDescription =
+      book.description && !underscore.isEmpty(book.description)
+        ? book.description.split(regex).join("\n")
+        : "";
     return (
       <Media as="li">
         {this.getImage()}
